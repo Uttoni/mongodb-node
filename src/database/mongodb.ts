@@ -5,6 +5,7 @@ dotenv.config();
 
 export const mongoConnect = async () => {
     try{
+        
         console.log("Connecting to MongoDB...");
         await connect(process.env.MONGO_URL as string);
 
